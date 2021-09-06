@@ -1,0 +1,30 @@
+cy.get('#productConfiglable > span')
+cy.get('#productConfig > span')
+
+
+cy.get('#serviceOption > .select > select')
+
+cy.get('#serviceType_1 > input')
+cy.get('#ConfigSubmitButton')
+
+
+
+
+/// <reference types="cypress" />
+
+import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+import CHSProductConfigPage from "../../pageObjects/mainParentPages/CHSProductConfigPage";
+//import CHSProductConfigSectionOfProductConfigPage  from "../../pageObjects/mainParentPages/CHSProductConfigPageSection";
+
+
+When('I add a CHS Related Product Install order of Service', () => { 
+
+    //const CHSProductConfigPage = new CHSProductConfigPage();
+    CHSProductConfigPage.validateProductConfigurationPageExists();
+    CHSProductConfigPage.selectServiceOption();
+    CHSProductConfigPage.selectServiceType();
+    CHSProductConfigPage.clickSubmit();
+
+adasf
+       
+});
